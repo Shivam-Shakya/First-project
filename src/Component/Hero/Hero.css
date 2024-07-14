@@ -1,0 +1,275 @@
+.hero {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-blur {
+    width: 352px;
+    height: 480px;
+    left: 0;
+}
+
+.left-h {
+    padding: 32px;
+    padding-top: 24px;
+    flex: 3;
+    display: flex;
+    gap: 32px;
+    flex-direction: column;
+}
+
+
+.best-ad {
+    margin-top: 34px;
+    background-color: #363d42;
+    border-radius: 64px;
+    width: fit-content;
+    padding: 20px 13px;
+    text-transform: uppercase;
+    color: #fff;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.best-ad>span {
+    z-index: 2;
+}
+
+.best-ad>div {
+    z-index: 1;
+    position: absolute;
+    background-color: #f48915;
+    width: 88px;
+    height: 80%;
+    left: 8px;
+    border-radius: 48px;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    text-transform: uppercase;
+    font-size: 72px;
+    font-weight: bold;
+    color: #fff;
+    text-overflow: inherit;
+}
+
+.hero-text>div:nth-of-type(3) {
+    font-size: 16px;
+    font-weight: 200;
+    text-transform: none;
+    letter-spacing: 1px;
+    width: 80%;
+}
+
+
+.figures {
+    display: flex;
+    gap: 32px;
+}
+
+.figures>div {
+    display: flex;
+    flex-direction: column;
+}
+
+.figures>div>span:nth-of-type(1) {
+    color: white;
+    font-size: 32px;
+}
+
+.figures>div>span:nth-of-type(2) {
+    color: #9c9c9c;
+    text-transform: uppercase;
+}
+
+.hero-button {
+    display: flex;
+    gap: 16px;
+    font-weight: normal;
+}
+
+.hero-button>:nth-child(1) {
+    color: white;
+    background-color: #f48915;
+    width: 128px;
+}
+
+.hero-button>:nth-child(2) {
+    color: white;
+    background-color: transparent;
+    width: 128px;
+    border: 2px solid #f48915;
+}
+
+
+.right-h {
+    flex: 1;
+    position: relative;
+    background-color: #f48915;
+}
+
+.right-h>.btn {
+    position: absolute;
+    right: 48px;
+    top: 32px;
+    color: black;
+}
+
+.heart-rate {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background-color: #464053;
+    width: fit-content;
+    padding: 16px;
+    align-items: start;
+    border-radius: 5px;
+    position: absolute;
+    right: 64px;
+    top: 112px;
+}
+
+.heart-rate>img {
+    width: 32px;
+}
+
+.heart-rate>:nth-of-type(1) {
+    color: #9c9c9c;
+}
+
+.heart-rate>:nth-of-type(2) {
+    font-size: 22px;
+    color: #fff;
+}
+
+.hero-img {
+    position: absolute;
+    top: 160px;
+    right: 128px;
+    width: 352px;
+    z-index: 2;
+
+}
+
+.hero-img-back {
+    position: absolute;
+    top: 64px;
+    right: 320px;
+    z-index: 1;
+    width: 220px;
+}
+
+.calories {
+    display: flex;
+    gap: 32px;
+    background-color: #656565;
+    border-radius: 5px;
+    padding: 16px;
+    width: 200px;
+    position: absolute;
+    top: 512px;
+    right: 448px;
+}
+
+.calories>img {
+    width: 48px;
+}
+
+.calories>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.calories>div>:nth-of-type(1) {
+    color: #9c9c9c;
+}
+
+.calories>div>:nth-of-type(2) {
+    font-size: 22px;
+    color: #fff;
+}
+
+
+@media screen and (max-width: 768px) 
+{
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero-blur {
+        width: 224px;
+    }
+
+    .best-ad {
+        margin-top: 0;
+        font-size: small;
+        align-self: center;
+    }
+
+    .hero-text {
+        font-size: xx-large;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero-text>div:nth-of-type(3) {
+        font-size: small;
+        font-weight: 200;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+
+    .hero-button {
+        justify-content: center;
+    }
+
+    .figures>div>span:nth-of-type(1) {
+        font-size: large;
+    }
+
+    .figures>div>span:nth-of-type(2) {
+        font-size: small;
+    }
+
+    .right-h{
+        position: relative;
+        background: none;
+    }
+
+    .heart-rate{
+        top: 16px;
+        left: 32px;
+    }
+
+    .calories{
+        position: relative;
+        top: 80px;
+        left: 32px;
+    }
+    .calories>img{
+        width: 32px;
+    }
+
+    .calories>div>:nth-of-type(2) {
+        font-size: 16px;
+    }
+    .hero-img{
+        position: relative;
+        width: 240px;
+        left: 112px;
+        top: 64px;
+        align-self: center;
+    }
+    .hero-img-back{
+        width: 240px;
+        left: 32px;
+        top: 0px;
+        z-index: -1;
+    }
+}
